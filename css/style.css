@@ -1,0 +1,1039 @@
+/* RESET / */
+* {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin-bottom: 0 !important; }
+
+main {
+  text-align: center; }
+
+.divider2 {
+  height: 30px; }
+
+/* BUTTONS */
+.button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  width: 200px;
+  color: #606060;
+  background-color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 500ms; }
+
+.button:hover {
+  background-color: #d8d8d8;
+  color: #606060; }
+
+.btn-whatsapp {
+  color: black;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 9909999; }
+
+.whatsapp {
+  width: 5rem !important; }
+
+/* GALERIA */
+.galeria {
+  max-width: 100%; }
+
+.galeriaTitulos {
+  position: absolute;
+  z-index: 100;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: all 300ms; }
+
+.light-box {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms; }
+  .light-box__img {
+    width: 60rem;
+    padding: 4rem;
+    max-width: 100%;
+    transition: all 300ms; }
+
+.light-box:target {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms; }
+
+.cerrar {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  text-decoration: none; }
+
+.cerrar:hover {
+  color: #c5c5c5; }
+
+.arrowLeft {
+  display: block;
+  position: absolute;
+  left: 3rem;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem; }
+
+.arrowLeft:hover {
+  color: #c5c5c5; }
+
+.arrowRight {
+  display: block;
+  position: absolute;
+  right: 3rem;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem; }
+
+.arrowRight:hover {
+  color: #c5c5c5; }
+
+/* LINK IMAGENES */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* IMAGENES */
+.blend {
+  opacity: 75%;
+  transition: all 700ms; }
+
+.blend:hover {
+  opacity: 50%; }
+
+/* /////////////////////////////// MEDIA QUERY ///////////////////////////////*/
+@media (max-width: 575px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area3" "area4" "area5" "area6" "area7" "area8"; }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area3" "area4" "area5" "nightlife" "art" "aerea"; }
+  .familia {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .producto {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .nightlife {
+    grid-area: nightlife;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .art {
+    grid-area: art;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .aerea {
+    grid-area: aerea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; } }
+
+/* /////////////// MOBILE /////////////*/
+@media (min-width: 576px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area3" "area4" "area5" "area6" "area7" "area8"; }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area3" "area4" "area5" "nightlife" "art" "aerea"; }
+  .familia {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .producto {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .nightlife {
+    grid-area: nightlife;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .art {
+    grid-area: art;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; }
+  .aerea {
+    grid-area: aerea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black; } }
+
+/* /////////////// TABLET START //////////////*/
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area6"; }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area3 area4" "area5 nightlife" "art aerea"; }
+  .familia {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .producto {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .nightlife {
+    grid-area: nightlife;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .art {
+    grid-area: art;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; }
+  .aerea {
+    grid-area: aerea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: black; } }
+
+/* /////////////// DESKTOP START  ////////////*/
+@media (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "area3 area4 area5" "area6 area7 area8"; }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area3 area4" "area5 nightlife" "art aerea"; }
+  .familia {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .producto {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .nightlife {
+    grid-area: nightlife;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .art {
+    grid-area: art;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; }
+  .aerea {
+    grid-area: aerea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 440px;
+    overflow: hidden;
+    background-color: black; } }
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+  .light-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms; }
+    .light-box__img {
+      padding: 0;
+      transition: all 300ms; }
+  .arrowLeft {
+    display: block;
+    position: absolute;
+    left: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .arrowRight {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .light-box:target {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms; } }
+
+@media (min-width: 576px) {
+  .light-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms; }
+    .light-box__img {
+      padding: 0;
+      transition: all 300ms; }
+  .arrowLeft {
+    display: block;
+    position: absolute;
+    left: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem; }
+  .arrowRight {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem; }
+  .light-box:target {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms; } }
+
+@media (min-width: 768px) {
+  .light-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms; }
+    .light-box__img {
+      width: 60rem;
+      padding: 0;
+      max-width: 100%;
+      transition: all 300ms; }
+  .light-box:target {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms; } }
+
+@media (min-width: 992px) {
+  .light-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms; }
+    .light-box__img {
+      width: 60rem;
+      padding: 4rem;
+      max-width: 100%;
+      transition: all 300ms; } }
+
+@media (min-width: 1200px) {
+  .light-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms; }
+    .light-box__img {
+      width: 60rem;
+      padding: 8rem;
+      max-width: 100%;
+      transition: all 300ms; } }
+
+/* ////////////NOSOTROS//////////// */
+/* FLEX BOX */
+.flexNosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+/* IMAGEN */
+.fotoNosotros {
+  padding: 5px;
+  width: 70%; }
+
+/* TEXTO */
+.parrafoNosotros {
+  text-align: left;
+  line-height: 28px;
+  color: #606060;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style: none; }
+
+/* ///////////////// SERVICIOS ////////////////// */
+/* FOTO */
+/* TEXTOS */
+.row__h3 {
+  color: #497db6;
+  font: normal 14px "Muli", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+  padding-top: 2rem; }
+
+.row__h2 {
+  margin-top: 0;
+  color: #404040;
+  font: normal 14px "Muli", sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 24px;
+  /* line-height: 44px; */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px; }
+
+.row__p {
+  text-align: left;
+  line-height: 28px;
+  color: #606060;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.row__photo {
+  max-width: 400px;
+  display: flex;
+  padding-top: 40px;
+  /* padding: 20px; */ }
+
+/* //////////// BLOG //////////// */
+.containerBlog {
+  max-width: 650px !important;
+  width: 100%; }
+
+.fotoBlog {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.row__location {
+  font: normal 14px "Muli", sans-serif;
+  color: #404040;
+  font-size: 22px;
+  text-align: left !important;
+  line-height: 32px;
+  margin-top: 0;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  padding-top: 20px; }
+
+.row__parrafo, blockquote p {
+  font: normal 14px "Muli", sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #606060;
+  font-size: 16px;
+  text-align: left !important;
+  line-height: 28px; }
+
+.row__negrita {
+  font: normal 14px "Muli", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #404040;
+  font-size: 16px;
+  text-align: left !important;
+  line-height: 28px; }
+
+blockquote {
+  position: relative;
+  text-align: left; }
+
+blockquote.icono {
+  padding: 0 0 0 70px;
+  position: relative; }
+
+/* COMILLAS */
+blockquote:before {
+  position: absolute;
+  content: "\201C";
+  color: #404040;
+  font-size: 120px;
+  width: 70px;
+  height: 70px;
+  bottom: 90px;
+  left: 0;
+  opacity: 40%;
+  font-family: sans-serif; }
+
+blockquote p {
+  position: relative;
+  font-style: italic; }
+
+.containerContacto {
+  max-width: 850px !important;
+  width: 100%; }
+  .containerContacto__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .containerContacto__item {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .containerContacto__icono {
+    font-size: 40px;
+    color: #497db6; }
+  .containerContacto__p {
+    text-align: left;
+    line-height: 28px;
+    color: #606060;
+    font: normal 14px "Muli", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.fieldset {
+  flex-wrap: wrap;
+  display: inline-flex; }
+  .fieldset__item {
+    padding: 5px; }
+  .fieldset__input {
+    color: #606060;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #404040;
+    box-sizing: border-box; }
+  .fieldset__textarea {
+    width: 100%;
+    height: 80px;
+    color: #606060;
+    border: 1px solid #606060; }
+
+.divider {
+  height: 90px; }
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .title__H2 {
+    color: #497db6;
+    text-transform: uppercase;
+    font: normal 14px "Montserrat", sans-serif;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .title__H1 {
+    margin-top: 0;
+    color: #404040;
+    font: normal 32px "Montserrat", sans-serif;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center; }
+
+@media (max-width: 767px) {
+  .divider {
+    height: 20px; } }
+
+.footer {
+  background-color: #151515; }
+  .footer__container {
+    background-color: #151515; }
+  .footer__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #151515;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .footer__item {
+    padding-right: 80px; }
+  .footer__p {
+    font: normal 14px "Muli", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: normal; }
+  .footer__ul {
+    padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0; }
+  .footer__li {
+    font: normal 14px "Muli", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+  .footer__a {
+    font: normal 14px "Muli", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: none;
+    color: white; }
+  .footer__a:hover {
+    text-decoration: none;
+    color: #c5c5c5; }
+
+.subFooter {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .subFooter__logo {
+    width: 30px; }
+  .subFooter__p {
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #151515; }
+
+/* /////////////// SLIDER ///////////////*/
+.carousel-item__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.carousel-item__titulo {
+  color: #ffffff;
+  font: normal 32px "Montserrat", sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  text-align: center; }
+
+.carousel-item__parrafo {
+  color: #ffffff;
+  font: normal 14px "Montserrat", sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center; }
+
+.sliderDesktop {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1; }
+
+.sliderMobile {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0; }
+
+@media (max-width: 575.98px) {
+  .sliderMobile {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1; }
+  .sliderDesktop {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0; } }
+
+/* /////////////// HEADER /////////////// */
+.header {
+  background-color: rgba(0, 0, 0, 0.88);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+
+/* ///////////////// CUENTA ///////////// */
+.formLogin {
+  display: none;
+}
+
+#div1 {
+  display: none;
+}
+.containerLogin {
+  max-width: 500px !important;
+  width: 100%;
+}
+
+/* /////////////// MENU /////////////// */
+.logoHeader {
+  width: 10rem;
+  padding-bottom: 2%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2%;
+  margin: 0; }
+
+  .sticky {
+    position: fixed;
+    /* right: 0;
+    top: 70px; */
+    /* top: 0; */
+    /* width: 100%; */
+     z-index: 2000; 
+    /* padding-top: 0.3rem; */
+    /* padding-bottom: 0.3rem;  */
+  }
+  .sticky2 {
+    /* position: fixed; */
+    /* right: 0;
+    top: 70px; */
+    /* top: 0; */
+    /* width: 100%; */
+    width: 1140px;
+         /* z-index: 2000;  */
+    /* padding-top: 0.3rem; */
+    /* padding-bottom: 0.3rem;  */
+  }
+.fas {
+  color: #404040;
+  font-family: 'Montserrat, Muli, sans-serif';
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 14px;
+  /* margin-left: 0; */
+  /* margin-right: 0; */
+  transition: color 300ms;
+  /* padding-left: 10px; */
+  /* padding-right: 5px; */
+
+}
+.fas2 {
+  color: #404040;  
+}
+
+
+nav {
+  background-color: rgba(0, 0, 0, 0) !important; }
+
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: absolute; }
+
+.nav-link {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 0;
+  margin-right: 0;
+  transition: color 300ms; }
+
+.dropdown-item {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  color: #606060 !important;
+  font-weight: 700 !important;
+  font-size: 14px;
+  transition: color 300ms; }
+
+.navDivider {
+  color: white;
+  font-size: 4px;
+  opacity: 70%; }
+
+.social {
+  width: 1rem; }
+
+@media (max-width: 767px) {
+  .header {
+    background-color: black;
+    position: relative;
+    top: 0;
+    z-index: 2000;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem; }
+  .nav-link {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    /* color: white !important; */
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    transition: color 300ms;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important; } }
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    /* color: white !important; */
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    transition: color 300ms;
+    border-top: 1px solid rgba(255, 255, 255, 0.08); } }
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    /* color: white !important; */
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    transition: color 300ms;
+    border-top: none; } }

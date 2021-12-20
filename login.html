@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- SASS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- STYLE SHEET CSS -->
+  <!-- <link rel="stylesheet" href="style/style.css"> -->
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/38d739702e.js" crossorigin="anonymous"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Contacto. Estudio fotográfico. Buenos Aires.</title>
+  <meta name="description" content="Contactanos y conoce más sobre nuestros servicios en fotografía profesional.">
+  <link rel="shortcut icon" href="style/images/favicon.png">
+  <!-- ANIMACION SCROLL -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <!-- BOOTSTRAP MENU START -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #151515;">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html"><img src="style/images/logo-light@2x.png"
+            alt="memoriesphotostories logo" class="logoHeader"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <!-- submenu 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Galería
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="galeria.html">Bodas</a>
+                                <a class="dropdown-item" href="galeria.html">Verano</a>
+                                <a class="dropdown-item" href="galeria.html">Estudio</a>
+                                <a class="dropdown-item" href="galeria.html">Noche</a>
+                            </div>-->
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="servicios.html">Servicios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Tienda</a>
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="login.html">Cuenta<span class="sr-only">(current)</span></a>
+            </li> -->
+            <!-- <div>
+                            <i class="navDivider fas fa-circle"></i>
+                        </div> -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link social"
+                  href="https://www.youtube.com/channel/UCfrzkqZpRUd8Vq2-0aWoYwg?view_as=subscriber" target="_blank"><i
+                    class="fab fa-youtube "></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link social" href="https://www.instagram.com/memories.photo.stories/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="divider"></div>
+
+  <body>
+    <main>
+         <!-- iconos carrito y login -->
+         <div class="container ">
+          <div class="row  sticky">
+              <ul class="nav justify-content-end sticky2">
+                  <li class="nav-item ">
+                      <a class="nav-link" href="carrito.html">
+                         <i class="fas fa-shopping-cart"></i> 
+                         <div class="fas2">Mi carrito</div>
+                          <div class="fas2" id="totalCarrito">
+                          </div>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="login.html">
+                          <i class="fas fa-user"></i>
+                          <div class="fas2">Mi cuenta</div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="container containerLogin">
+        <div class="row ">
+          <div class="col-12 title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="row">
+              <div class="col-2"></div>
+              <a href="#" class="col-4" onClick="registrarse(event)">
+                <h2 id="btnRegistrarse" class="title__H2">Registrarse</h2>
+              </a>
+              <a href="#" class="col-4" onClick="ingresar(event)">
+                <h2 id="btnIngresar" class="title__H2">Ingresar</h2>
+              </a>
+              <div class="col-2"></div>
+            </div>
+            <!-- FORMULARIO DE REGISTRO -->
+            <div class="container">
+              <form id="registrarse">
+                <fieldset>
+                  <div class="row fieldset ">
+                    <div class="col-12 fieldset__item">
+                      <input id="newName" class="fieldset__input" type="text" name="newName" placeholder="Nuevo Usuario"
+                        required>
+                    </div>
+                    <div class="col-12 fieldset__item">
+                      <input id="newPass" class="fieldset__input" type="password" name="newPass"
+                        placeholder="Nueva Contraseña">
+                    </div>
+                  </div>
+                  <button type="submit" value="Registrarse" onClick="store(event)" class="button">
+                    Registrarse</button>
+                </fieldset>
+              </form>
+              <form id="ingresar" class="formLogin">
+                <fieldset>
+                  <div class="row fieldset ">
+                    <div class="col-12 fieldset__item">
+                      <input id="userName" class="fieldset__input" type="text" name="userName" placeholder="Usuario"
+                        required>
+                    </div>
+                    <div class="col-12 fieldset__item">
+                      <input id="userPass" class="fieldset__input" type="password" name="userPass"
+                        placeholder="Nueva Contraseña">
+                    </div>
+                  </div>
+                  <button value="Ingresar" onClick="check(event)" class="button">
+                    Ingresar</button>
+                </fieldset>
+              </form>
+            </div>
+            <!-- Divider -->
+            <!-- FORMULARIO DE INGRESO 
+            <div class="divider2"></div>
+          </div>
+       
+          <div class="col-12 title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <a href="#" onClick="ingresar(event)" ><h2 class="title__H2">Ingresar</h2></a> 
+             <div class="container">
+            
+               <form id="ingresar"  class="formLogin"> 
+                <fieldset>
+                  <div class="row fieldset ">
+                    <div class="col-md-6 fieldset__item">
+                      <input id="userName" class="fieldset__input" type="text" name="userName" placeholder="Usuario"
+                        required>
+                    </div>
+                    <div class="col-md-6 fieldset__item">
+                      <input id="userPass" class="fieldset__input" type="password" name="userPass"
+                        placeholder="Nueva Contraseña">
+                    </div>
+                  </div>
+                  <button value="Ingresar" onClick="check(event)" class="button">
+                    Ingresar</button>
+                </fieldset>
+              </form>-->
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- BOTON WHATAPP -->
+      <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=+5491136154636" target="_blank">
+          <img class="whatsapp" src="style/images/gallery/whatsapp.png" alt="icono whatsapp">
+        </a>
+      </div>
+    </main>
+    <div class="divider"></div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__flexbox">
+          <div class="footer__item">
+            <p class="footer__p">mapa</p>
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a class="footer__a" href="index.html">Inicio</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="galeria.html">Galería</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="servicios.html">Servicios</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="blog.html">Blog</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <p class="footer__p">redes sociales</p>
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a class="footer__a" href="https://www.facebook.com/memoriesphotograhs/" target="_blank">Facebook</a>
+              </li>
+              <li class="footer__li">
+                <a class="footer__a" href="https://www.instagram.com/memories.photo.stories/"
+                  target="_blank">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <p class="footer__p">contacto</p>
+            <ul class="footer__ul">
+              <li class="footer__li">Buenos Aires, Argentina</li>
+              <li class="footer__li">+54 11 3615 4636</li>
+              <li class="footer__li">hola@memoriesphotostories.com.ar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- LOGO FOOTER DEL SITIO -->
+    <div class="subFooter container">
+      <div>
+        <img class="subFooter__logo" src="style/images/favicon.png" alt="memoriesphotostories favicon">
+      </div>
+      <div>
+        <p class="subFooter__p">© 2021 Memories. Todos los derechos reservados.</p>
+      </div>
+    </div>
+    <!-- Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS local!!! -->
+    <script src="js/animation.js"></script>
+    <script src="js/login.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+</html>
